@@ -1,0 +1,621 @@
+@import url(font.css);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: "iransans";
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #3c3c3c;
+}
+p, a,i {
+    font-size: 16px;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ ul li{
+    list-style-type: none;
+    display: inline-block;
+ }
+
+ .btn {
+   border: none;
+   padding: 8px 12px;
+   background-color: #A62626;
+   color: #ffffff;
+   border-radius: 4px;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+ .btn:hover {
+  background-color: #c44242;
+ }
+
+ /* ---------- start header -------------- */
+ .header {
+    width: 100%;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    z-index: 99999;
+ }
+
+ /* ---------- start header-desktop -------------- */
+ .header-desktop>* {
+    display: inline-block;
+ }
+
+ .header-desktop {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    border-top:1px solid rgba(160, 159, 159, 0.247);
+    border-bottom:1px solid rgba(160, 159, 159, 0.247);
+    z-index: 999;
+    background-color: #ffffff;
+ }
+ .header-desktop i {
+  font-size: 0.8rem;
+ }
+ /* ------------- start header-right ------------------ */
+ .header-right {
+    width: 22%;
+    height: 40px;
+    padding: 0 8px;
+ }
+ .header-right> div{
+    display: inline-block;
+    padding-top: 7px;
+ }
+ .header-logo {
+   width: 23%;
+   text-align: left;
+ }
+
+ .header-logo img{
+   width: 76%;
+   vertical-align:middle;
+ }
+
+ .location span{
+  font-size: 30px;
+  color: #E0E0E0;
+  margin: 10px;
+ }
+
+ .location a, span{
+   transition: all 0.3s;
+   border-radius: 4px;
+   padding: 8px 5px;
+   font-size: 0.9rem;
+ }
+ .location a:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+ }
+ /* ------------- end header-right ------------------ */
+ .menu-max992{
+  font-size: 0.9rem;
+  display: none;
+ }
+ .header-logo-max992{
+  width: 25%;
+ }
+ .menu-max992 i{
+  margin: auto 8px;
+  transition: all 0.3s;
+ }
+
+ .menu-max992 i:hover{
+  color: #000000;
+ }
+
+ /* ------------- start header-left ------------------ */
+ .header-left>* {
+    float: right;
+ }
+
+ .header-left{
+   width: 78%;
+ }
+ .search-box input{
+   display: inline-block;
+   border: none;
+   background-color: #F5F5F5;
+ }
+
+ .header-left{
+   position: absolute;
+   padding: 12px 0 15px 30px;
+   
+ }
+ .search-box{
+   position: relative;
+   width: 55%;
+   height: 100%;
+   
+ }
+
+ .search-box i{
+  color:#A6A6A6;
+  background-color: #F5F5F5;
+  display: inline-block;
+  position: relative;
+  font-size: 0.9rem;
+  right: 5px;
+  top: 2px;
+  height: 45px;
+  padding: 16px;
+  text-align: left;
+  border-radius: 0 4px 4px 0;
+ }
+ .search-box form{   
+   height: 100%;
+   width: 88%;
+   margin-right: 0;
+   display: inline-block;
+ }
+
+ .search-box form input{
+  background-color: #F5F5F5;
+  margin-right: 0;
+  padding-right: 8px;
+  height: 45px;
+  border-radius: 4px 0 0 4px;
+  width: 85%;
+
+ }
+
+ ::placeholder{
+  color: #A6A6A6;
+  font-size: 13px;
+ }
+
+ .top-menu{
+   width: 45%;
+   text-align: left;
+ }
+
+ .top-menu ul li {
+   padding-left: 8px;
+   
+   cursor: pointer;
+ }
+ .top-menu ul li a{
+  transition: all 0.3s;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem !important;
+ }
+
+ .top-menu ul li a:hover{
+  background-color: #F5F5F5;
+  color: #000000;
+ }
+ /* ------------ end header-left -------------- */
+ /* ------------- end header-desktop ------------------ */
+
+ /* ------------- start header-mobile ------------------ */
+.header-mobile {
+    display: none; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 999;
+ }
+
+ .search-mobile{
+  width: 96%;
+  height: 45px;
+  margin: 8px auto;
+  padding: 10px;
+  border:1px solid rgba(160, 159, 159, 0.316);
+  border-radius: 4px;
+ }
+ .search-mobile>*{
+  float: right;
+  color: #A6A6A6;
+ }
+
+ .search-mobile-box{
+  width: 67%;
+ }
+ .search-mobile-box form{
+  width: 72%;
+  display: inline-block;
+ }
+ .search-mobile-box input {
+  width: 100%;
+ }
+ .search-mobile-box input, i{
+  display: inline-block;
+  border: none;
+  color: #A6A6A6;
+  background-position: 50%;
+  padding-left: 10px;
+  margin: auto;
+ }
+
+ .search-mobile-location{
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+ }
+
+ .search-mobile-location span{
+  color: #E0E0E0;
+  margin: auto;
+ }
+ /* ------------- end header-mobile ------------------ */
+
+ /* ------------- start mobile-menu ------------------ */
+ .mobile-menu{
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: 999;
+ }
+
+ .mobile-menu>*{
+  float: right;
+ }
+
+.item-meno-mobile {
+  width: 20%;
+  text-align:center;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.first-child img{
+  width: 25px;
+}
+.item-meno-mobile a{
+  font-size: 0.8rem;
+}
+/* ------------- end mobile-menu ------------------ */
+
+/* -------------------start container --------------------- */
+.container{
+  width: 97%;
+}
+
+/* ------------- start aside-container ------------------ */
+.aside-container{
+  width: calc(calc(20%));
+  margin-right: 40px;
+  position: fixed;
+  top: 70px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  padding-bottom: 100px;
+}
+
+/* ------------- start aside-content ---------------- */
+
+.aside a{
+  text-decoration: none;
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+.aside a:hover{
+  color: #000000;
+}
+
+.item-list{
+  font-size: 25px !important;
+}
+
+.item-nav{
+  padding-bottom: 5px;
+}
+
+.item-bottom{
+  border-top: 1px solid;
+  margin: 0px 15px;
+  padding-top: 10px;
+}
+/* ------------- end aside-content --------------- */
+
+/* ------------- start aside-footer --------------- */
+.aside-footer-links{
+  padding-left: 20px;
+}
+.aside-footer-links a{
+  display: inline-block;
+  font-size: 0.85rem;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  transition: all 0.4s;
+}
+
+.aside-footer-links a:hover{
+  color: #000000;
+  font-weight: bold;
+}
+
+.aside-footer-social {
+  text-align: center;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.aside-footer-social i {
+  padding: 15px;
+  color: #5b5b5b;
+  font-size: 20px;
+  transition: all 0.4s; 
+}
+
+.aside-footer-social i:hover{
+  color: #000000;
+  font-weight: bold;
+}
+
+.aside-footer-enamad {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.aside-footer-enamad img {
+  width: 80px;
+}
+/* ------------- end aside-footer --------------- */
+/* ----------- end aside-container  ----------------- */
+
+
+/* ------------- start article --------------- */
+.article{
+  width: 78%;
+  position: relative;
+  right: 23%;
+  z-index: -1;
+  margin-top: 70px;
+}
+
+.title-container {
+  width: 76%;
+  position: relative;
+  right: 22%;
+  padding: 20px;
+  
+  text-align: left;
+}
+.title-container h1{
+  font-size: 12px;
+  color: #707070;
+}
+
+.box {
+  width: calc(calc(32.9%) - 10px);
+  min-width: 276px;  
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  padding: 10px;
+  border:1px solid rgba(160, 159, 159, 0.3);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor:pointer !important;
+}
+
+.box-content {
+  width: calc(calc(100%) - 160px);
+  height: 125px;
+  max-height: 125px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding: 4px;
+  line-height: 20px;
+}
+.box-content h2{
+  font-size: 1rem;
+  color: #010101;
+}
+.box-content p{
+  font-size: 0.75rem;
+}
+.box-content span {
+  color: #A62626;
+}
+
+.box-icon-chat{
+  display: inline-block;
+  width: 20px;
+  margin-right: 4px;
+}
+.box-icon-chat i{
+  margin-bottom: 0;
+}
+.box-img{
+  width: 125px;
+  height: 125px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* ------------- end article --------------- */
+/* ------------- end container --------------- */
+
+
+/* ------------- start media-qoerys --------------- */
+/* ------------- start max-width:1200px --------------- */
+ @media screen and (max-width:1200px) {
+
+  .header-desktop{
+    font-size: 0.8rem;
+  }
+  .header-right{
+    width: 27%;
+  }
+  .header-left{
+    width: 72%;
+    padding-left: 30px;
+  }
+  .search-box{
+    width: 50%;
+  }
+  .search-box form{
+    width: 82%;
+  }
+  .top-menu{
+    width: 50%;
+  }
+  .top-menu ul li{
+  padding-left: 0;
+  padding-right: 0px;
+ }
+
+ .top-menu ul li a{
+  font-size: 0.7rem;
+ }
+
+ .container{
+  width: 98%;
+ }
+
+ .aside-container {
+  display: none;
+}
+.article {
+  width: 98%;
+  right: 20px;
+}
+}
+/* ------------- end max-width:1200px --------------- */
+
+/* ------------- start max-width:992px --------------- */
+ @media screen and (max-width:992px) {
+  .header-right{
+    width: 47%;
+  }
+
+  .menu-min992 {
+    display: none;
+  }
+  .menu-max992{
+    display: inline-block;
+    width: 100%;
+  }
+  .header-logo {
+    width: 18%;
+  }
+  .header-logo img{
+    width: 75%;
+  }
+  .header-left{
+    width: 53%;
+  }
+
+  .search-box{
+    width: 100%;
+  }
+  .search-box form{
+    width: 85%;
+  }
+  .search-box form input{
+    width: 100%;
+  }
+  .top-menu{
+    display: none;
+  }
+
+  .box {
+    width: calc(calc(48.9%) - 16px);
+  }
+ }
+ /* ------------- end max-width:992px --------------- */
+
+ /* ------------- start max-width:768px --------------- */
+ @media screen and (max-width:768px) {
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+  .item-meno-mobile i, a, img{
+    width: 100%;
+  }
+
+  .article {
+    width: calc(95%);
+    /* right: 35%; */
+}
+
+.box {
+    width: 100%;
+    margin:10px auto;
+
+}
+.aside {
+    display: none;
+    width: 27%;
+}
+  
+}
+/* ------------- end max-width:768px --------------- */
+
+/* ------------- start max-width:576px --------------- */
+ @media screen and (max-width:576px){
+
+  .article{
+    text-align: center;
+  }
+  .box {
+    width: 99%;
+    margin: 10px auto
+}
+ }
+ /* ------------- end max-width:576px --------------- */
+
+ /* ------------- start max-width:298px --------------- */
+ @media screen and (max-width: 298px) {
+
+  .search-mobile{
+    width: 91%;
+  }
+
+    .search-mobile-box{
+      width: 80%;
+    }
+
+    ::placeholder {
+      font-size: 0.6rem;
+    }
+    .search-mobile-location{
+      width: 20%;
+    }
+    .search-mobile-location a {
+        display: none;
+    }
+    .item-meno-mobile i {
+      font-size: 0.8rem;
+    }
+    .item-meno-mobile a{
+      font-size: 0.6rem;
+    }
+    .box{
+      margin: auto;
+    }
+ }
+ /* ------------- end max-width:298px --------------- */
+ /* ------------- end media-qoerys --------------- */
